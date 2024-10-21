@@ -2,9 +2,35 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 
 class MyForm extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            name: '',
+            email: '',
+            gender: 'Man'
+        }
+    }
+    //inisialisasi state
     render(){
         return(
             <div>
+                <h1>Register Form</h1>      
+                <form>
+                    <label htmlFor="name">Name: </label>
+                    <input id="name" type="text" value={this.state.name}/>
+                    <br/>
+                    <label htmlFor="email">Email: </label>
+                    <input id="email" type="email" value={this.state.email}></input>
+                    <br/>
+                    <label htmlFor="gender">Gender: </label>
+                    <select  id="gender" value={this.state.gender}>
+                        <option value="Man">Man</option>
+                        <option value="Woman">Woman</option>
+                    </select>
+                    <br/>
+                    <button type="submit">Submit</button>
+                </form>
                  <h1>Register Form</h1>      
             <form>
                <label htmlFor="name">Name: </label>
@@ -25,5 +51,6 @@ class MyForm extends React.Component{
         )
     }
 }
+
 const root = createRoot(document.getElementById('root'));
 root.render(<MyForm />);
