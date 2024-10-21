@@ -5,7 +5,7 @@ class MyForm extends React.Component{
     render(){
         return(
             <div>
-                <h1>Register Form</h1>      
+                 <h1>Register Form</h1>      
             <form>
                <label htmlFor="name">Name: </label>
                <input id="name" type="text" />
