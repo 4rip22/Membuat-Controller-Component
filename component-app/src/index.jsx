@@ -13,6 +13,7 @@ class MyForm extends React.Component{
         this.onNameChangeEventHandler = this.onNameChangeEventHandler.bind(this);
         this.onEmailChangeEventHandler = this.onEmailChangeEventHandler.bind(this);
         this.onGenderChangeEventHandler = this.onGenderChangeEventHandler.bind(this);
+        this.onSubmitEventHandler = this.onSubmitEventHandler.bind(this);
     }
     onNameChangeEventHandler(event){
         this.setState(() => {
