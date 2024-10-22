@@ -39,11 +39,11 @@ class MyForm extends React.Component{
 
     onSubmitEventHandler(event){
         event.preventDefault();
-        alert(`
+        const message=`
             Name: ${this.state.name}
             Email: ${this.state.email}
             Gender: ${this.state.gender}
-        `);
+        `;
         alert(message);
     }
     render(){
