@@ -50,7 +50,7 @@ class MyForm extends React.Component{
         return(
             <div>
                 <h1>Register Form</h1>      
-                <form onSubmit={this.onSubmitEventHandler}>
+                <form onSubmit= {this.onSubmitEventHandler} >
                     <label htmlFor="name">Name: </label>
                     <input id="name" type="text" value={this.state.name} onChange={this.onNameChangeEventHandler}/>
                     <br/>
